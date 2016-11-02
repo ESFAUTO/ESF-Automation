@@ -46,7 +46,7 @@ public class BaseDriver implements AutomationConstants {
 	@BeforeSuite
 	public void initFrameWork()
 	{
-		 eReport=new ExtentReports("C:\\Reports\\BMOESF.html");
+		 eReport=new ExtentReports("./Reports/ESFREPORT.html");
 		
 		
 //		try {
