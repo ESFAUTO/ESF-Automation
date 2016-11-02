@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="74738" started-at="2016-11-02T06:32:20Z" finished-at="2016-11-02T06:33:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="74738" started-at="2016-11-02T06:32:20Z" finished-at="2016-11-02T06:33:34Z">
+      <class name="main.DeltaDriver">
+        <test-method status="PASS" signature="initFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="initFrameWork" is-config="true" duration-ms="100" started-at="2016-11-02T12:02:19Z" finished-at="2016-11-02T12:02:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initFrameWork -->
+        <test-method status="PASS" signature="open()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="open" is-config="true" duration-ms="10104" started-at="2016-11-02T12:02:20Z" finished-at="2016-11-02T12:02:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="37507" started-at="2016-11-02T12:02:30Z" data-provider="getScenarios" finished-at="2016-11-02T12:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scenario1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TAX Pay-Use Case1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarios -->
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="26539" started-at="2016-11-02T12:03:08Z" data-provider="getScenarios" finished-at="2016-11-02T12:03:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scenario1.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TAX Pay-Use Case2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarios -->
+        <test-method status="PASS" signature="endFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="endFrameWork" is-config="true" duration-ms="228" started-at="2016-11-02T12:03:34Z" finished-at="2016-11-02T12:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endFrameWork -->
+      </class> <!-- main.DeltaDriver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
