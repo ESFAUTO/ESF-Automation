@@ -1,22 +1,24 @@
 package main;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestResult;
 import org.testng.SkipException;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import generics.Excel;
@@ -26,31 +28,31 @@ public class DeltaDriver extends BaseDriver
 {
 
 @BeforeClass
-public void open()
+public void open() throws MalformedURLException
 {    
-	
 	String appURL=Property.getPropertyValue(configPptPath,"URL");
 	String timeout=Property.getPropertyValue(configPptPath,"TimeOut");
-	 System.setProperty("webdriver.chrome.driver",chromeDriverPath);
-//	 System.setProperty("webdriver.ie.driver","D://seleniumbrowserdriver//IEDriverServer.exe");
-	 driver = new ChromeDriver();
-//	 driver=new InternetExplorerDriver();
-	 driver.manage().window().maximize();
-	 driver.get(appURL);
-	 driver.manage().timeouts().implicitlyWait(Long.parseLong(timeout),TimeUnit.SECONDS);
-
+	System.setProperty("webdriver.chrome.driver",chromeDriverPath);	 		 
+	driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get(appURL);
+	driver.manage().timeouts().implicitlyWait(Long.parseLong(timeout),TimeUnit.SECONDS);
 }
 
 
 @Test(dataProvider="getScenarios")
-public void testScenarios(String scenarioSheet, String executionStatus,String formName) throws InterruptedException
-{      
-	 testReport=eReport.startTest(scenarioSheet+"-"+formName);
-//   int rc=Excel.getRowCount(scenariosPath, scenarioSheet);
-//   testReport = eReport.startTest(browser+"_"+scenarioSheet);
-    if(executionStatus.equalsIgnoreCase("yes")){
-    
+public void testScenarios(String scenarioSheet, String executionStatus) throws InterruptedException
+{    
+	Excel lib=new Excel();
+	testReport=eReport.startTest(scenarioSheet);
+   
+	if(executionStatus.equalsIgnoreCase("yes"))
+    {  
     int stepCount = Excel.getRowCount(scenariosPath,scenarioSheet);
+    int rowcount= Excel.getRowCount(scenariosPath1,"sheet1");
+    for(int i=1;i<=rowcount;i++){
+    lib.writeExcelData(scenariosPath1,"sheet1",i,1,"");
+    }
     
     for(int i=1;i<=stepCount;i++)
     {
@@ -62,21 +64,17 @@ public void testScenarios(String scenarioSheet, String executionStatus,String fo
     
     String input2 = Excel.getCellValue(scenariosPath, scenarioSheet, i, 3);
    
-    
-     String msg = "DESCRIPTION: "+description+ ", ACTION: "+action+ ", INPUT1: "+input1+ ", INPUT2: "+input2;
-     testReport.log(LogStatus.INFO,msg);
-     KeyWord.executekeyword(driver, action, input1, input2,testReport); 
-     
-}
+    String msg = "DESCRIPTION: "+description+ ", ACTION: "+action+ ", INPUT1: "+input1+ ", INPUT2: "+input2;
+    testReport.log(LogStatus.INFO,msg);
+    KeyWord.executekeyword(driver, action, input1, input2,i,scenarioSheet,description,testReport); 
+    }
     }
     else
     {
-        testReport.log(LogStatus.SKIP,"Execution status is 'NO'");
-        throw new SkipException("Skipping this scenario");
+    testReport.log(LogStatus.SKIP,"Execution status is 'NO'");
+    throw new SkipException("Skipping this scenario");
     }
     
-    }
-
-
 }
 
+}

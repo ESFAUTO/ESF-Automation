@@ -42,7 +42,7 @@ public class Excel
     		FileInputStream fis=new FileInputStream(path);
     		Workbook wb=WorkbookFactory.create(fis);
     		Sheet s=wb.getSheet(sheet);
-    		Row r=s.getRow(row);
+    		Row r=s.createRow(row);
     		Cell c=r.createCell(cell);
     		c.setCellValue(data);
     		FileOutputStream fos=new FileOutputStream(path);

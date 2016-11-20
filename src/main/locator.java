@@ -7,10 +7,7 @@ public class locator {
 	    public static By getLocator(String input1)
 	    {
 	        By b=null;
-	        /*String[] str=input1.split("_");
-	        String locator=str[0];
-	        String value=str[1];*/
-	        
+	       
 	        int p=input1.indexOf("_");
 	        String locator=input1.substring(0, p);
 	        String value=input1.substring(p+1);

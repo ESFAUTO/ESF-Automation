@@ -1,12 +1,11 @@
 package main;
 
-import java.io.File;
-import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -28,17 +27,15 @@ public class BaseDriver implements AutomationConstants {
 	public String[][] getScenarios()
 	{
 		int scenarioCount=Excel.getRowCount(controllerPath,suiteSheet);
-		String[][] data =new String[scenarioCount][3];
+		String[][] data =new String[scenarioCount][2];
 		for(int i=1;i<=scenarioCount;i++)
 		{
 		String scenarioName=Excel.getCellValue(controllerPath,suiteSheet,i,0);
 		String executionStatus=Excel.getCellValue(controllerPath,suiteSheet,i,1);
-		String formName=Excel.getCellValue(controllerPath,suiteSheet,i,2);
+		
 		data[i-1][0]=scenarioName;
 		data[i-1][1]=executionStatus;
-		data[i-1][2]=formName;
-		}
-	  
+	}
 		return data;
 		
 	}
@@ -47,12 +44,6 @@ public class BaseDriver implements AutomationConstants {
 	public void initFrameWork()
 	{
 		 eReport=new ExtentReports("./Reports/ESFREPORT.html");
-		
-		
-//		try {
-//			FileUtils.deleteDirectory(new File("./test-output"));
-//		} catch (IOException e) {
-//		}
 	}
 	
 	
@@ -60,11 +51,6 @@ public class BaseDriver implements AutomationConstants {
 	public void endFrameWork()
 	{
 		eReport.flush();
-//		try {
-//			FileUtils.cleanDirectory(new File(AutomationConstants.CsvFolderpath));
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
 	}
 	}
 
