@@ -14,7 +14,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 import generics.Excel;
 
-public class BaseDriver implements AutomationConstants {
+public class BaseDriver implements AutomationConstants 
+{
 	
 	
 	public WebDriver driver;
