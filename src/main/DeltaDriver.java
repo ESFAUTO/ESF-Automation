@@ -53,7 +53,6 @@ public void testScenarios(String scenarioSheet, String executionStatus) throws I
     for(int i=1;i<=rowcount;i++){
     lib.writeExcelData(scenariosPath1,"sheet1",i,1,"");
     }
-    
     for(int i=1;i<=stepCount;i++)
     {
     String description = Excel.getCellValue(scenariosPath, scenarioSheet, i, 0);
