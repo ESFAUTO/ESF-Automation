@@ -50,7 +50,8 @@ public void testScenarios(String scenarioSheet, String executionStatus) throws I
     {  
     int stepCount = Excel.getRowCount(scenariosPath,scenarioSheet);
     int rowcount= Excel.getRowCount(scenariosPath1,"sheet1");
-    for(int i=1;i<=rowcount;i++){
+    for(int i=1;i<=rowcount;i++)
+    {
     lib.writeExcelData(scenariosPath1,"sheet1",i,1,"");
     }
     for(int i=1;i<=stepCount;i++)
