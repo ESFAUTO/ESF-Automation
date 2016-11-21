@@ -30,8 +30,7 @@ public class DeltaDriver extends BaseDriver
 @BeforeClass
 public void open() throws MalformedURLException
 {   
-	/*string*/
-	/*string222222*/
+
 	String appURL=Property.getPropertyValue(configPptPath,"URL");
 	String timeout=Property.getPropertyValue(configPptPath,"TimeOut");
 	System.setProperty("webdriver.chrome.driver",chromeDriverPath);	 		 
