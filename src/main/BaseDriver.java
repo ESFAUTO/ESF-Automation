@@ -16,8 +16,6 @@ import generics.Excel;
 
 public class BaseDriver implements AutomationConstants 
 {
-	
-	
 	public WebDriver driver;
 	public  ExtentReports eReport;
 	public  ExtentTest testReport;
