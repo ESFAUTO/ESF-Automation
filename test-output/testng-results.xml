@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="43" failed="0" total="45" passed="2">
+<testng-results skipped="17" failed="0" total="45" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74157" started-at="2016-11-20T13:10:18Z" finished-at="2016-11-20T13:11:32Z">
+  <suite name="Default suite" duration-ms="1876511" started-at="2016-11-21T04:30:32Z" finished-at="2016-11-21T05:01:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74157" started-at="2016-11-20T13:10:18Z" finished-at="2016-11-20T13:11:32Z">
+    <test name="Default test" duration-ms="1876511" started-at="2016-11-21T04:30:32Z" finished-at="2016-11-21T05:01:48Z">
       <class name="main.DeltaDriver">
-        <test-method status="PASS" signature="initFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="initFrameWork" is-config="true" duration-ms="105" started-at="2016-11-20T18:40:18Z" finished-at="2016-11-20T18:40:18Z">
+        <test-method status="PASS" signature="initFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="initFrameWork" is-config="true" duration-ms="188" started-at="2016-11-21T10:00:32Z" finished-at="2016-11-21T10:00:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initFrameWork -->
-        <test-method status="PASS" signature="open()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="open" is-config="true" duration-ms="10751" started-at="2016-11-20T18:40:18Z" finished-at="2016-11-20T18:40:29Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="open" is-config="true" duration-ms="11428" started-at="2016-11-21T10:00:32Z" finished-at="2016-11-21T10:00:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="17927" started-at="2016-11-20T18:40:31Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="17950" started-at="2016-11-21T10:00:45Z" data-provider="getScenarios" finished-at="2016-11-21T10:01:03Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="64938" started-at="2016-11-21T10:01:03Z" data-provider="getScenarios" finished-at="2016-11-21T10:02:08Z">
           <params>
             <param index="0">
               <value>
@@ -40,49 +40,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="106792" started-at="2016-11-21T10:02:08Z" data-provider="getScenarios" finished-at="2016-11-21T10:03:55Z">
           <params>
             <param index="0">
               <value>
@@ -91,49 +56,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="62125" started-at="2016-11-21T10:03:55Z" data-provider="getScenarios" finished-at="2016-11-21T10:04:57Z">
           <params>
             <param index="0">
               <value>
@@ -142,49 +72,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="110723" started-at="2016-11-21T10:04:57Z" data-provider="getScenarios" finished-at="2016-11-21T10:06:48Z">
           <params>
             <param index="0">
               <value>
@@ -193,49 +88,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="58760" started-at="2016-11-21T10:06:48Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -244,49 +104,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -337,7 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -388,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -439,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -490,7 +315,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -541,7 +366,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -592,7 +417,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -643,7 +468,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -694,7 +519,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -745,7 +570,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -796,7 +621,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -846,7 +671,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -896,7 +721,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -946,7 +771,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="48935" started-at="2016-11-21T10:07:47Z" data-provider="getScenarios" finished-at="2016-11-21T10:08:36Z">
           <params>
             <param index="0">
               <value>
@@ -955,48 +780,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="41314" started-at="2016-11-21T10:08:36Z" data-provider="getScenarios" finished-at="2016-11-21T10:09:17Z">
           <params>
             <param index="0">
               <value>
@@ -1005,48 +796,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="52776" started-at="2016-11-21T10:09:17Z" data-provider="getScenarios" finished-at="2016-11-21T10:10:10Z">
           <params>
             <param index="0">
               <value>
@@ -1055,48 +812,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="84717" started-at="2016-11-21T10:10:10Z" data-provider="getScenarios" finished-at="2016-11-21T10:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -1105,48 +828,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-21T10:11:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -1196,7 +885,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-21T10:11:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -1246,7 +935,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="2" started-at="2016-11-21T10:11:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -1296,7 +985,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-21T10:11:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -1346,7 +1035,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="47909" started-at="2016-11-21T10:11:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:12:22Z">
           <params>
             <param index="0">
               <value>
@@ -1355,48 +1044,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="43048" started-at="2016-11-21T10:12:22Z" data-provider="getScenarios" finished-at="2016-11-21T10:13:05Z">
           <params>
             <param index="0">
               <value>
@@ -1405,48 +1060,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="46131" started-at="2016-11-21T10:13:05Z" data-provider="getScenarios" finished-at="2016-11-21T10:13:52Z">
           <params>
             <param index="0">
               <value>
@@ -1455,48 +1076,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="42746" started-at="2016-11-21T10:13:52Z" data-provider="getScenarios" finished-at="2016-11-21T10:14:34Z">
           <params>
             <param index="0">
               <value>
@@ -1505,48 +1092,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="54489" started-at="2016-11-21T10:14:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -1555,48 +1108,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="50035" started-at="2016-11-21T10:15:29Z" data-provider="getScenarios" finished-at="2016-11-21T10:16:19Z">
           <params>
             <param index="0">
               <value>
@@ -1605,48 +1124,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="47708" started-at="2016-11-21T10:16:19Z" data-provider="getScenarios" finished-at="2016-11-21T10:17:07Z">
           <params>
             <param index="0">
               <value>
@@ -1655,48 +1140,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:40:49Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="45035" started-at="2016-11-21T10:17:07Z" data-provider="getScenarios" finished-at="2016-11-21T10:17:52Z">
           <params>
             <param index="0">
               <value>
@@ -1705,48 +1156,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="43208" started-at="2016-11-20T18:40:49Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="44038" started-at="2016-11-21T10:17:52Z" data-provider="getScenarios" finished-at="2016-11-21T10:18:36Z">
           <params>
             <param index="0">
               <value>
@@ -1762,7 +1179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="92013" started-at="2016-11-21T10:18:36Z" data-provider="getScenarios" finished-at="2016-11-21T10:20:08Z">
           <params>
             <param index="0">
               <value>
@@ -1771,48 +1188,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="86443" started-at="2016-11-21T10:20:08Z" data-provider="getScenarios" finished-at="2016-11-21T10:21:34Z">
           <params>
             <param index="0">
               <value>
@@ -1821,48 +1204,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="69135" started-at="2016-11-21T10:21:34Z" data-provider="getScenarios" finished-at="2016-11-21T10:22:43Z">
           <params>
             <param index="0">
               <value>
@@ -1871,48 +1220,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="95150" started-at="2016-11-21T10:22:43Z" data-provider="getScenarios" finished-at="2016-11-21T10:24:18Z">
           <params>
             <param index="0">
               <value>
@@ -1921,48 +1236,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="72351" started-at="2016-11-21T10:24:18Z" data-provider="getScenarios" finished-at="2016-11-21T10:25:31Z">
           <params>
             <param index="0">
               <value>
@@ -1971,48 +1252,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="0" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="117635" started-at="2016-11-21T10:25:31Z" data-provider="getScenarios" finished-at="2016-11-21T10:27:28Z">
           <params>
             <param index="0">
               <value>
@@ -2021,48 +1268,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="77461" started-at="2016-11-21T10:27:28Z" data-provider="getScenarios" finished-at="2016-11-21T10:28:46Z">
           <params>
             <param index="0">
               <value>
@@ -2071,48 +1284,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="105827" started-at="2016-11-21T10:28:46Z" data-provider="getScenarios" finished-at="2016-11-21T10:30:32Z">
           <params>
             <param index="0">
               <value>
@@ -2121,48 +1300,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="SKIP" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="1" started-at="2016-11-20T18:41:32Z" data-provider="getScenarios" finished-at="2016-11-20T18:41:32Z">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, java.lang.String)[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="testScenarios" duration-ms="76673" started-at="2016-11-21T10:30:32Z" data-provider="getScenarios" finished-at="2016-11-21T10:31:48Z">
           <params>
             <param index="0">
               <value>
@@ -2171,48 +1316,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[No]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this scenario]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this scenario
-	at main.DeltaDriver.testScenarios(DeltaDriver.java:75)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenarios -->
-        <test-method status="PASS" signature="endFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="endFrameWork" is-config="true" duration-ms="342" started-at="2016-11-20T18:41:33Z" finished-at="2016-11-20T18:41:33Z">
+        <test-method status="PASS" signature="endFrameWork()[pri:0, instance:main.DeltaDriver@55f3ddb1]" name="endFrameWork" is-config="true" duration-ms="423" started-at="2016-11-21T10:31:48Z" finished-at="2016-11-21T10:31:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endFrameWork -->
