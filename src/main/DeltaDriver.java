@@ -39,23 +39,15 @@ public void open() throws MalformedURLException
 	String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
 
 	DesiredCapabilities capabilities = new DesiredCapabilities();
+	capabilities.setCapability("browser", "Chrome");
+	capabilities.setCapability("browser_version", "54.0");
 	capabilities.setCapability("os", "Windows");
-	capabilities.setCapability("browser", "chrome");
+	capabilities.setCapability("os_version", "7");
+	capabilities.setCapability("resolution", "1024x768");
 	capabilities.setCapability("browserstack.local", browserstackLocal);
 	capabilities.setCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
 	driver = new RemoteWebDriver(new URL("https://" + username + ":" + accessKey + "@hub.browserstack.com/wd/hub"), capabilities);
 	driver.get("https://bmo-esf-qa.galepartners.com/");
-//	  DesiredCapabilities caps = DesiredCapabilities.chrome();
-//	  caps.setCapability("browser", "Chrome");
-//	  caps.setCapability("browser_version", "53.0");
-//	  caps.setCapability("os", "Windows");
-//	  caps.setCapability("os_version", "7");
-//	  caps.setCapability("resolution", "1024x768");
-//	    driver = new RemoteWebDriver(
-//	      new URL("https://gireeshashenoy1:xHRMpqxgD8sn3e3sr75s@hub-cloud.browserstack.com/wd/hub"),caps);
-//	    driver.get("https://bmo-esf-qa.galepartners.com");
-//	    driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-	
 	
 //	String appURL=Property.getPropertyValue(configPptPath,"URL");
 //	String timeout=Property.getPropertyValue(configPptPath,"TimeOut");
