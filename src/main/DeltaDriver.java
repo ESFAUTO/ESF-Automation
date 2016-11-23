@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -30,14 +31,39 @@ public class DeltaDriver extends BaseDriver
 @BeforeClass
 public void open() throws MalformedURLException
 {   
+	
+	
+	String username = System.getenv("BROWSERSTACK_USER");
+	String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY");
+	String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
+	String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
 
-	String appURL=Property.getPropertyValue(configPptPath,"URL");
-	String timeout=Property.getPropertyValue(configPptPath,"TimeOut");
-	System.setProperty("webdriver.chrome.driver",chromeDriverPath);	 		 
-	driver = new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.get(appURL);
-	driver.manage().timeouts().implicitlyWait(Long.parseLong(timeout),TimeUnit.SECONDS);
+	DesiredCapabilities capabilities = new DesiredCapabilities();
+	capabilities.setCapability("os", "Windows");
+	capabilities.setCapability("browser", "chrome");
+	capabilities.setCapability("browserstack.local", browserstackLocal);
+	capabilities.setCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
+	driver = new RemoteWebDriver(new URL("https://" + username + ":" + accessKey + "@hub.browserstack.com/wd/hub"), capabilities);
+	driver.get("https://bmo-esf-qa.galepartners.com/");
+//	  DesiredCapabilities caps = DesiredCapabilities.chrome();
+//	  caps.setCapability("browser", "Chrome");
+//	  caps.setCapability("browser_version", "53.0");
+//	  caps.setCapability("os", "Windows");
+//	  caps.setCapability("os_version", "7");
+//	  caps.setCapability("resolution", "1024x768");
+//	    driver = new RemoteWebDriver(
+//	      new URL("https://gireeshashenoy1:xHRMpqxgD8sn3e3sr75s@hub-cloud.browserstack.com/wd/hub"),caps);
+//	    driver.get("https://bmo-esf-qa.galepartners.com");
+//	    driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+	
+	
+//	String appURL=Property.getPropertyValue(configPptPath,"URL");
+//	String timeout=Property.getPropertyValue(configPptPath,"TimeOut");
+//	System.setProperty("webdriver.chrome.driver",chromeDriverPath);	 		 
+//	driver = new ChromeDriver();
+//	driver.manage().window().maximize();
+//	driver.get(appURL);
+//	driver.manage().timeouts().implicitlyWait(Long.parseLong(timeout),TimeUnit.SECONDS);
 }
 
 

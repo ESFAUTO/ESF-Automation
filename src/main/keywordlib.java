@@ -40,13 +40,18 @@ catch (Exception e)
 // click can be used to click on checkbox,buttons,radiobuttons
 public static void click(WebDriver driver, String input1, String action, int i, ExtentTest testReport) 
 {
+	Excel xlib = new Excel();
 try 
 {
 	driver.findElement(locator.getLocator(input1)).click();
 	testReport.log(LogStatus.PASS, "Clicked successfully");
-	Excel xlib = new Excel();
+}
+catch (Exception e) 
+{
+	testReport.log(LogStatus.FAIL, "Failed to Click");
+}
+try{
 	String compare = input1.substring(0, 2);
-	
 	if (compare.equalsIgnoreCase("ID"))
     {
 	boolean b = driver.findElement(locator.getLocator(input1)).isSelected();
@@ -60,11 +65,12 @@ try
 	String gotres1 = String.valueOf(b);
 	xlib.writeExcelData(scenariosPath1, "Sheet1", i, 1, gotres1);
 	}
-} 
-catch (Exception e) 
-{
-	testReport.log(LogStatus.FAIL, "Failed to Click");
 }
+catch(Exception e)
+{
+	
+}
+
 
 }
 
